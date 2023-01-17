@@ -1,0 +1,18 @@
+{# Staff listing for Dashboard #}
+<div class="dcf-d-flex dcf-col-gap-4"> 
+  <div class="dcf-ac-center">
+    <div class="dcf-w-9">
+      <div class="dcf-ratio dcf-ratio-1x1">
+        <img class="dcf-ratio-child dcf-obj-fit-cover dcf-obj-top" src="{{ field_staff_photo[0]['uri'][9:] }}" alt="{{ title }}" />
+      </div>
+    </div>
+  </div>
+  <div class="dcf-ac-center">
+    <div class="text">
+    <h2 class="dcf-txt-md dcf-mb-0">{{ title }}</h2>
+      <p class="dcf-txt-xs dcf-mb-1 unl-dark-gray dcf-italic">Last updated {{ changed|date('m/d/y') }}</p>
+    <p class="dcf-txt-sm dcf-mb-0"><a href="{{ node_url }}" class="dcf-mr-1">View</a>  |  <a href="node/{{ nid }}/edit" class="dcf-ml-1">Edit</a></p>
+      
+  </div>
+  </div>
+</div>

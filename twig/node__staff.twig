@@ -1,0 +1,44 @@
+<div class="dcf-grid dcf-pt-8 dcf-col-gap-6 dcf-row-gap-6">
+  <div class="dcf-col-25%-start@md dcf-col-33%-start@sm dcf-col-100%">
+      <img src="{{ field_staff_photo[0]["uri"][9:] }}" alt="{{ field_staff_photo[0]["alt"][9:] }}" class="unl-frame-quad" />
+    </div>
+    <div class="dcf-col-75%-end@sm dcf-col-67%-end@sm dcf-col-100%">
+      <h3 class="dcf-regular">{{ title }}</h3>
+      {% if field_staff_link %}
+      <p class="dcf-mb-0"><a href="{{ field_staff_link[0]["url"] }}">{{ field_staff_link[0]["title"] }}</a></p>
+      {% endif %}
+      {% if field_pronouns %}
+      <p class="dcf-mb-0"><strong>Pronouns:</strong> {{ field_pronouns[0]["value"]|striptags }}</p>
+      {% endif %}
+      {% if field_hometown %}
+      <p class="dcf-mb-0"><strong>Hometown:</strong> {{ field_hometown[0]["value"]|striptags }}</p>
+      {% endif %}
+      {% if field_year_of_study %}
+      <p class="dcf-mb-0"><strong>Year of Study:</strong> {{ render(content.field_year_of_study)|striptags }}</p>
+      {% endif %}
+      {% if field_major %}
+      <p class="dcf-mb-0"><strong>Major(s):</strong> {{ field_major[0]["value"]|striptags }}</p>
+      {% endif %}
+      {% if field_minor %}
+      <p class="dcf-mb-0"><strong>Minor(s):</strong> {{ field_minor[0]["value"]|striptags }}</p>
+      {% endif %}
+      {% if field_future_life_plans %}
+      <p class="dcf-mb-0"><strong>Future Life Plans:</strong> {{ field_future_life_plans[0]["value"]|striptags }}</p>
+      {% endif %}
+      {% if field_superhero_name %}
+      <p class="dcf-mb-0"><strong>Superhero Name:</strong> {{ field_superhero_name[0]["value"]|striptags }}</p>
+      {% endif %}
+      {% if field_favorite_writing %}
+      <p class="dcf-mb-0"><strong>Favorite Piece of Writing:</strong> {{ field_favorite_writing[0]["value"]|striptags }}</p>
+      {% endif %}
+      {% if field_favorite_or_least %}
+      <p class="dcf-mb-0"><strong>Favorite/least favorite writing:</strong> {{ field_favorite_or_least[0]["value"]|striptags }}</p>
+      {% endif %}
+      {% if field_part_of_speech %}
+      <p class="dcf-mb-0"><strong>Part of speech you would be and why:</strong> {{ field_part_of_speech[0]["value"]|striptags }}</p>
+      {% endif %}
+      {% if field_hobbies %}
+      <p class="dcf-mb-0"><strong>Hobbies: </strong> {{ field_hobbies[0]["value"]|striptags }}</p>
+      {% endif %}
+    </div>
+  </div>

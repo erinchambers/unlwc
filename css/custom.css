@@ -1,0 +1,65 @@
+/*///////////////////////////////////////////////////////////////////////////
+Red textured band with white text
+///////////////////////////////////////////////////////////////////////////*/
+
+.engl-red-band {
+    background-color: #cc0000;
+    background-image: url(images/red_wave.png);
+    background-repeat: repeat;
+  }
+  
+  @media (min-width: 769px) {
+    .engl-red-band {
+      padding-top: 3.157em;
+      padding-bottom: 3.375em;
+    }
+  }
+  
+  .red-band-wavy {
+    padding-top: 2em;
+    background-color: #cc0000;
+    background: url(../images/textures/wave.jpg) left top repeat;
+  }
+  
+  .red-band-wavy h2 {
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+  }
+  
+  .red-band-wavy p {
+    line-height: 2em
+  }
+  
+  /*///////////////////////////////////////////////////////////////////////////
+  Bibliographic styles
+  ///////////////////////////////////////////////////////////////////////////*/
+  
+  
+  .citation {
+    font-family: "Gotham SSm A","Gotham SSm B",Verdana,"Verdana Ref",Geneva,Tahoma,"Lucida Grande","Lucida Sans Unicode","Lucida Sans","DejaVu Sans","Bitstream Vera Sans","Liberation Sans",sans-serif;
+  }
+  
+  .resource .citation {
+    background-color: rgba(0,0,0,0.05);
+    padding: 0.5em 2em;
+  }
+  
+  .resource .summary {
+    padding-left: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .resource h4 {
+    font-weight: 400;
+  }
+  
+  /*///////////////////////////////////////////////////////////////////////////
+  Hero Image Positioning
+  ///////////////////////////////////////////////////////////////////////////*/
+  
+  @media (min-width:42.09em) {
+    .page-node-26 .dcf-hero .dcf-hero-group-2 img {
+      object-position: 0 25% !important;
+    }
+  }
+  
